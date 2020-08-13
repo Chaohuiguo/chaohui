@@ -1,6 +1,6 @@
 ---
 title: Taxonomies for Docs
-description: Docs' taxonomies, suitable for use on the website. 
+description: Docs' taxonomies, suitable for use on the website.
 ms.author: sabarret
 author: sarah-barrett
 ms.date: 02/14/2020
