@@ -363,9 +363,8 @@ Version 2.42 - Removed "Forms Pro"
 | windows-virtual-desktop         | Windows Virtual Desktop               | 2     | windows        |                               |
 | windows-wdk                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
 | windows-wpf                     | Windows Presentation Foundation (WPF) | 2     | windows        |                               |
-| xbox                            | Xbox                                  | 1     |                |                               |
 | chaohuiTest                            | chaohuiTest                                  | 1     |                |                               |
-
+| chaohuiTest2                            | chaohuiTest                                  | 1     |                |                               |
 
 
 ### Recently removed terms
@@ -478,6 +477,7 @@ v2.2 - Added 3 new roles
 | solution architect     | solution-architect     | Individuals whose main responsibility is to define the application architecture (what set of modules is needed for a project and through what protocols they will be interconnected) for developers in the enterprise.          |                        | 
 | student                | student                | Someone who is studying to learn new technology skills. They may not yet have a specialization in mind that would fit them into another role, or they may be interested in topics that are relevant to multiple types of roles. |                        | 
 | technology manager     | technology-manager     | People who are responsible for managing and directing a company’s technology infrastructure.                                                                                                                                    |                        | 
+| chaohuiTest    | technology-manager     | People who are responsible for managing and directing a company’s technology infrastructure.                                                                                                                                    |                        | 
 
 ## Level
 
