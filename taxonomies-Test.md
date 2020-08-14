@@ -345,7 +345,6 @@ Version 2.42 - Removed "Forms Pro"
 | sql-server                      | SQL Server                            | 1     |                |                               |
 | surface                         | Surface                               | 1     |                |                               |
 | surface-duo                     | Surface Duo                           | 2     | surface        |                               |
-| vs                              | Visual Studio                         | 1     |                |                               |
 | vs-app-center                   | App Center                            | 2     | vs             |                               |
 | vs-code                         | Visual Studio Code                    | 2     | vs             |                               |
 | vs-mac                          | Visual Studio for Mac                 | 2     | vs             |                               |
