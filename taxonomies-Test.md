@@ -362,9 +362,7 @@ Version 2.42 - Removed "Forms Pro"
 | windows-uwp                     | Universal Windows Platform (UWP)      | 2     | windows        |                               |
 | windows-virtual-desktop         | Windows Virtual Desktop               | 2     | windows        |                               |
 | windows-wdk                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
-| windows-wpf                     | Windows Presentation Foundation (WPF) | 2     | windows        |                               |
-| chaohuiTest                            | chaohuiTest                                  | 1     |                |                               |
-| chaohuiTest2                            | chaohuiTest                                  | 1     |                |                               |
+| xbox2                            | Xbox                                  | 1     |                |                               |
 
 
 ### Recently removed terms
