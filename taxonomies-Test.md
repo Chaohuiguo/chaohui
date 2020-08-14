@@ -2,7 +2,7 @@
 title: Taxonomies for Docs
 description: Docs' taxonomies, suitable for use on the website.123
 ms.author: sabarret
-author: sarah-barrett
+author: sarah-barrett 
 ms.date: 02/14/2020
 ---
 # Taxonomies for Docs.microsoft.com
