@@ -364,6 +364,7 @@ Version 2.42 - Removed "Forms Pro"
 | windows-wdk                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
 | windows-wpf                     | Windows Presentation Foundation (WPF) | 2     | windows        |                               |
 | xbox                            | Xbox                                  | 1     |                |                               |
+| chaohuiTest                            | chaohuiTest                                  | 1     |                |                               |
 
 
 
