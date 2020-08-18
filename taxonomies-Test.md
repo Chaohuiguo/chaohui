@@ -278,7 +278,6 @@ Version 2.42 - Removed "Forms Pro"
 | dynamics-virtual-agent          | Virtual Agent for Customer Service    | 2     | dynamics-365   |                               |
 | expression                      | Expression                            | 1     |                |                               |
 | expression-studio               | Expression Studio                     | 2     | expression     |                               |
-| github                          | GitHub                                | 1     |                |                               |
 | m365                            | Microsoft 365                         | 1     |                |                               |
 | m365-ems                        | Enterprise Mobility + Security        | 2     | m365           |                               |
 | m365-ems-intune                 | Intune                                | 2     | m365           |                               |
