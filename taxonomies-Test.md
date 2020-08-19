@@ -30,10 +30,10 @@ Version 2.42 - Removed "Forms Pro"
 | dotnet-standard                 | .NET Standard                         | 2     | dotnet         |                               |
 | xamarin                         | Xamarin                               | 2     | dotnet         |                               |
 | azure                           | Azure                                 | 1     |                |                               |
-| azure-active-directory          | Active Directory                      | 2     | azure          |                               |
+| azure-active-directory-b2b         | Active Directory                      | 2     | azure          |                               |
 | azure-active-directory-b2c      | Active Directory B2C                  | 2     | azure          |                               |
 | azure-active-directory-domain   | Active Directory Domain Services      | 2     | azure          |                               |
-| azure-advisor                   | Advisor                               | 2     | azure          |                               |
+| azure-admin                   | Advisor                               | 2     | azure          |                               |
 | azure-analysis-services         | Analysis Services                     | 2     | azure          |                               |
 | azure-anomaly-detector          | Anomaly Detector                      | 2     | azure          |                               |
 | azure-api-apps                  | API Apps                              | 2     | azure          |                               |
