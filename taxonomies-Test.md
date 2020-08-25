@@ -357,9 +357,9 @@ Version 2.42 - Removed "Forms Pro"
 | windows-server                  | Windows Server                        | 2     | windows        |                               |
 | windows-smb-server              | Windows Small Business Server         | 2     | windows        |                               |
 | windows-system-center           | Windows System Center                 | 2     | windows        |                               |
-| windows-uwp                     | Universal Windows Platform (UWP)      | 2     | windows        |                               |
+| windows-uwp-b2b                     | Universal Windows Platform (UWP)      | 2     | windows        |                               |
 | windows-virtual-desktop         | Windows Virtual Desktop               | 2     | windows        |                               |
-| windows-wdk-B2B                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
+
 
 
 ### Recently removed terms
@@ -375,7 +375,7 @@ Version 2.42 - Removed "Forms Pro"
 - `azure-file-storage`: redirected to `azure-files`
 - `azure-sqldatabase-edge`: redirected to `azure-sql-edge`
 - `forms-pro`: redirected to `customer-voice`
-- `windows-wdk`: redirected to `windows-wdk-B2B`
+- `windows-uwp`: redirected to `windows-uwp-b2b`
 
 ## Dev lang
 
