@@ -353,7 +353,6 @@ Version 2.42 - Removed "Forms Pro"
 | windows-forms                   | Windows Form                          | 2     | windows        |                               |
 | windows-iot                     | Windows IoT                           | 2     | windows        |                               |
 | windows-iot-10core              | Windows 10 IoT Core                   | 2     | windows        |                               |
-| windows-server                  | Windows Server                        | 2     | windows        |                               |
 | windows-smb-server              | Windows Small Business Server         | 2     | windows        |                               |
 | windows-system-centerpo           | Windows System Center                 | 2     | windows        |                               |
 | windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
@@ -366,6 +365,7 @@ Version 2.42 - Removed "Forms Pro"
 - `dynamics-ai-market-insights`
 - `dynamics-ai-customer-service`
 - `dynamics-ai-sales`
+- `windows-server`
 - `dynamics-operations`: redirected to `dynamics-finance-operations`
 - `azure-sql-data-warehouse`: redirected to `azure-synapse-analytics`
 - `azure-machine-learning-services`: redirected to `azure-machine-learning`
