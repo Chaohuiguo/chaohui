@@ -360,7 +360,6 @@ Version 2.42 - Removed "Forms Pro"
 | windows-uwp                     | Universal Windows Platform (UWP)      | 2     | windows        |                               |
 | windows-virtual-desktop         | Windows Virtual Desktop               | 2     | windows        |                               |
 | windows-wdk-B2B                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
-| V-chg-Test@microsoft.com                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
 
 
 ### Recently removed terms
