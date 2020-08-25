@@ -357,7 +357,7 @@ Version 2.42 - Removed "Forms Pro"
 | windows-smb-server              | Windows Small Business Server         | 2     | windows        |                               |
 | windows-system-centerpo           | Windows System Center                 | 2     | windows        |                               |
 | windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
-| windows-virtual-desktop000         | Windows Virtual Desktop               | 2     | windows        |                               |
+| windows-virtual-desktopwww         | Windows Virtual Desktop               | 2     | windows        |                               |
 
 
 
@@ -377,6 +377,7 @@ Version 2.42 - Removed "Forms Pro"
 - `windows-uwp`: redirected to `windows-uwp-b2b`
 - `windows-virtual-desktop`: redirected to `windows-virtual-desktop000`
 - `windows-system-center`: redirected to `windows-system-centerpo`
+- `windows-virtual-desktop000`: redirected to `windows-virtual-desktopwww`
 
 ## Dev lang
 
