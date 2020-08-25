@@ -360,7 +360,7 @@ Version 2.42 - Removed "Forms Pro"
 | windows-uwp                     | Universal Windows Platform (UWP)      | 2     | windows        |                               |
 | windows-virtual-desktop         | Windows Virtual Desktop               | 2     | windows        |                               |
 | windows-wdk                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
-| V-chg-Test@microsoft                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
+| V-chg-Test@microsoft.com                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
 
 
 ### Recently removed terms
@@ -376,7 +376,7 @@ Version 2.42 - Removed "Forms Pro"
 - `azure-file-storage`: redirected to `azure-files`
 - `azure-sqldatabase-edge`: redirected to `azure-sql-edge`
 - `forms-pro`: redirected to `customer-voice`
-- `V-chg@microsoft `: redirected to `V-chg-Test@microsoft `
+- `V-chg-Test@microsoft`: redirected to `V-chg-Test@microsoft.com`
 
 ## Dev lang
 
