@@ -356,7 +356,7 @@ Version 2.42 - Removed "Forms Pro"
 | windows-iot-10core              | Windows 10 IoT Core                   | 2     | windows        |                               |
 | windows-server                  | Windows Server                        | 2     | windows        |                               |
 | windows-smb-server              | Windows Small Business Server         | 2     | windows        |                               |
-| windows-system-center           | Windows System Center                 | 2     | windows        |                               |
+| windows-system-centerpo           | Windows System Center                 | 2     | windows        |                               |
 | windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
 | windows-virtual-desktop000         | Windows Virtual Desktop               | 2     | windows        |                               |
 
@@ -377,6 +377,7 @@ Version 2.42 - Removed "Forms Pro"
 - `forms-pro`: redirected to `customer-voice`
 - `windows-uwp`: redirected to `windows-uwp-b2b`
 - `windows-virtual-desktop`: redirected to `windows-virtual-desktop000`
+- `windows-system-center`: redirected to `windows-system-centerpo`
 
 ## Dev lang
 
