@@ -348,7 +348,6 @@ Version 2.42 - Removed "Forms Pro"
 | vs-code                         | Visual Studio Code                    | 2     | vs             |                               |
 | vs-mac                          | Visual Studio for Mac                 | 2     | vs             |                               |
 | vs-online                       | Visual Studio Online                  | 2     | vs             |                               |
-| windows                         | Windows                               | 1     |                |                               |
 | windows-mdop                    | Desktop Optimization Pack             | 2     | windows        |                               |
 | windows-api-win32               | Windows API - Win32                   | 2     | windows        |                               |
 | windows-forms                   | Windows Form                          | 2     | windows        |                               |
