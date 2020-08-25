@@ -357,8 +357,8 @@ Version 2.42 - Removed "Forms Pro"
 | windows-server                  | Windows Server                        | 2     | windows        |                               |
 | windows-smb-server              | Windows Small Business Server         | 2     | windows        |                               |
 | windows-system-center           | Windows System Center                 | 2     | windows        |                               |
-| windows-uwp-b2b                     | Universal Windows Platform (UWP)      | 2     | windows        |                               |
-| windows-virtual-desktop         | Windows Virtual Desktop               | 2     | windows        |                               |
+| windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
+| windows-virtual-desktop123         | Windows Virtual Desktop               | 2     | windows        |                               |
 
 
 
@@ -376,6 +376,7 @@ Version 2.42 - Removed "Forms Pro"
 - `azure-sqldatabase-edge`: redirected to `azure-sql-edge`
 - `forms-pro`: redirected to `customer-voice`
 - `windows-uwp`: redirected to `windows-uwp-b2b`
+- `windows-virtual-desktop`: redirected to `windows-virtual-desktop123`
 
 ## Dev lang
 
