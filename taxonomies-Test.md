@@ -1,8 +1,8 @@
 ---
 title: Taxonomies for Docs
-description: Docs' taxonomies, suitable for use on the website.
+description: Docs' taxonomies, suitable for use on the website.123
 ms.author: sabarret
-author: sarah-barrett
+author: sarah-barrett 
 ms.date: 02/14/2020
 ---
 # Taxonomies for Docs.microsoft.com
@@ -17,7 +17,7 @@ ms.date: 02/14/2020
 
 This product taxonomy is used on Learn and Docs. Contact [DevRel IA](mailto:devrelIA@service.microsoft.com) to request changes. Current requests are tracked at [aka.ms/metadata-requests](https://aka.ms/metadata-requests).
 
-Version 2.43 - Added "Azure Attestation" and "MyAnalytics"
+Version 2.42 - Removed "Forms Pro"
 
 | Slug                            | Preferred Label                       | Level | Broader term   | Change in this version        |
 |---------------------------------|---------------------------------------|-------|----------------|-------------------------------|
@@ -30,10 +30,10 @@ Version 2.43 - Added "Azure Attestation" and "MyAnalytics"
 | dotnet-standard                 | .NET Standard                         | 2     | dotnet         |                               |
 | xamarin                         | Xamarin                               | 2     | dotnet         |                               |
 | azure                           | Azure                                 | 1     |                |                               |
-| azure-active-directory          | Active Directory                      | 2     | azure          |                               |
+| azure-active-directory-b2b         | Active Directory                      | 2     | azure          |                               |
 | azure-active-directory-b2c      | Active Directory B2C                  | 2     | azure          |                               |
 | azure-active-directory-domain   | Active Directory Domain Services      | 2     | azure          |                               |
-| azure-advisor                   | Advisor                               | 2     | azure          |                               |
+| azure-admin                   | Advisor                               | 2     | azure          |                               |
 | azure-analysis-services         | Analysis Services                     | 2     | azure          |                               |
 | azure-anomaly-detector          | Anomaly Detector                      | 2     | azure          |                               |
 | azure-api-apps                  | API Apps                              | 2     | azure          |                               |
@@ -49,7 +49,6 @@ Version 2.43 - Added "Azure Attestation" and "MyAnalytics"
 | azure-arc                       | Arc                                   | 2     | azure          |                               |
 | azure-archive-storage           | Archive Storage                       | 2     | azure          |                               |
 | azure-artifacts                 | Artifacts                             | 2     | azure          |                               |
-| azure-attestation               | Azure Attestation                     | 2     | azure          | added                         |
 | azure-automation                | Automation                            | 2     | azure          |                               |
 | azure-avere-vFXT                | Avere vFXT                            | 2     | azure          |                               |
 | azure-backup                    | Backup                                | 2     | azure          |                               |
@@ -279,14 +278,12 @@ Version 2.43 - Added "Azure Attestation" and "MyAnalytics"
 | dynamics-virtual-agent          | Virtual Agent for Customer Service    | 2     | dynamics-365   |                               |
 | expression                      | Expression                            | 1     |                |                               |
 | expression-studio               | Expression Studio                     | 2     | expression     |                               |
-| github                          | GitHub                                | 1     |                |                               |
 | m365                            | Microsoft 365                         | 1     |                |                               |
 | m365-ems                        | Enterprise Mobility + Security        | 2     | m365           |                               |
 | m365-ems-intune                 | Intune                                | 2     | m365           |                               |
 | m365-ems-configuration-manager  | System Center Configuration Manager   | 2     | m365           |                               |
 | m365-ems-cloud-app-security     | Cloud App Security                    | 2     | m365           |                               |
 | m365-information-protection     | Information Protection                | 2     | m365           |                               |
-| m365-myanalytics                | MyAnalytics                           | 2     | m365           | added                         |
 | m365-threat-protection          | Threat Protection                     | 2     | m365           |                               |
 | m365-security-score             | Security Score                        | 2     | m365           |                               |
 | m365-security-center            | Security Center                       | 2     | m365           |                               |
@@ -347,25 +344,19 @@ Version 2.43 - Added "Azure Attestation" and "MyAnalytics"
 | sql-server                      | SQL Server                            | 1     |                |                               |
 | surface                         | Surface                               | 1     |                |                               |
 | surface-duo                     | Surface Duo                           | 2     | surface        |                               |
-| vs                              | Visual Studio                         | 1     |                |                               |
 | vs-app-center                   | App Center                            | 2     | vs             |                               |
 | vs-code                         | Visual Studio Code                    | 2     | vs             |                               |
 | vs-mac                          | Visual Studio for Mac                 | 2     | vs             |                               |
 | vs-online                       | Visual Studio Online                  | 2     | vs             |                               |
-| windows                         | Windows                               | 1     |                |                               |
 | windows-mdop                    | Desktop Optimization Pack             | 2     | windows        |                               |
 | windows-api-win32               | Windows API - Win32                   | 2     | windows        |                               |
 | windows-forms                   | Windows Form                          | 2     | windows        |                               |
 | windows-iot                     | Windows IoT                           | 2     | windows        |                               |
 | windows-iot-10core              | Windows 10 IoT Core                   | 2     | windows        |                               |
-| windows-server                  | Windows Server                        | 2     | windows        |                               |
 | windows-smb-server              | Windows Small Business Server         | 2     | windows        |                               |
-| windows-system-center           | Windows System Center                 | 2     | windows        |                               |
-| windows-uwp                     | Universal Windows Platform (UWP)      | 2     | windows        |                               |
-| windows-virtual-desktop         | Windows Virtual Desktop               | 2     | windows        |                               |
-| windows-wdk                     | Windows Driver Kit (WDK)              | 2     | windows        |                               |
-| windows-wpf                     | Windows Presentation Foundation (WPF) | 2     | windows        |                               |
-| xbox                            | Xbox                                  | 1     |                |                               |
+| windows-system-centerpo           | Windows System Center                 | 2     | windows        |                               |
+| windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
+| windows-virtual-desktopwww         | Windows Virtual Desktop               | 2     | windows        |                               |
 
 
 
@@ -374,6 +365,7 @@ Version 2.43 - Added "Azure Attestation" and "MyAnalytics"
 - `dynamics-ai-market-insights`
 - `dynamics-ai-customer-service`
 - `dynamics-ai-sales`
+- `windows-server`
 - `dynamics-operations`: redirected to `dynamics-finance-operations`
 - `azure-sql-data-warehouse`: redirected to `azure-synapse-analytics`
 - `azure-machine-learning-services`: redirected to `azure-machine-learning`
@@ -382,6 +374,10 @@ Version 2.43 - Added "Azure Attestation" and "MyAnalytics"
 - `azure-file-storage`: redirected to `azure-files`
 - `azure-sqldatabase-edge`: redirected to `azure-sql-edge`
 - `forms-pro`: redirected to `customer-voice`
+- `windows-uwp`: redirected to `windows-uwp-b2b`
+- `windows-virtual-desktop`: redirected to `windows-virtual-desktop000`
+- `windows-system-center`: redirected to `windows-system-centerpo`
+- `windows-virtual-desktop000`: redirected to `windows-virtual-desktopwww`
 
 ## Dev lang
 
@@ -461,7 +457,6 @@ v2.2 - Added 3 new roles
 | administrator          | administrator          | Individuals who provide proactive administrative support to a manager and team.                                                                                                                                                 |                        | 
 | AI engineer            | ai-engineer            | People who analyze requirements for cloud-based or hybrid AI needs and implement solutions.                                                                                                                                     |                        | 
 | AI edge engineer       | ai-edge-engineer       | People who have the ability to deploy AI and ML models in containers at the Edge.                                                                                                                                               |                        | 
-| app maker              | maker                  | A non-developer who uses PowerApps and Microsoft Flow to create apps to quickly improve business processes.                                                                                                                     |                        | 
 | auditor                | auditor                | People who analyze and assess the adequacy and effectiveness of security controls implemented by a Cloud Service Provider’s IT systems                                                                                          | added                  | 
 | business analyst       | business-analyst       | Individuals who gather, develop, review and/or prioritize requirements, projections and/or specifications (technical or otherwise) about an application, system, process, department, or organization.                          |                        | 
 | business owner         | business-owner         | People who have the authority to make decisions about a business area or division within a company.                                                                                                                             |                        | 
@@ -479,6 +474,7 @@ v2.2 - Added 3 new roles
 | solution architect     | solution-architect     | Individuals whose main responsibility is to define the application architecture (what set of modules is needed for a project and through what protocols they will be interconnected) for developers in the enterprise.          |                        | 
 | student                | student                | Someone who is studying to learn new technology skills. They may not yet have a specialization in mind that would fit them into another role, or they may be interested in topics that are relevant to multiple types of roles. |                        | 
 | technology manager     | technology-manager     | People who are responsible for managing and directing a company’s technology infrastructure.                                                                                                                                    |                        | 
+| chaohuiTest    | technology-manager     | People who are responsible for managing and directing a company’s technology infrastructure.                                                                                                                                    |                        | 
 
 ## Level
 
