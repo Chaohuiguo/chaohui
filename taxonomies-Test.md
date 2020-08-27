@@ -345,7 +345,7 @@ Version 2.42 - Removed "Forms Pro"
 | surface                         | Surface                               | 1     |                |                               |
 | surface-duo                     | Surface Duo                           | 2     | surface        |                               |
 | vs-app-center                   | App Center                            | 2     | vs             |                               |
-| vs-code                         | Visual Studio Code                    | 2     | vs             |                               |
+| vs-code-2                         | Visual Studio Code                    | 2     | vs             |                               |
 | vs-mac                          | Visual Studio for Mac                 | 2     | vs             |                               |
 | vs-online                       | Visual Studio Online                  | 2     | vs             |                               |
 | windows-mdop                    | Desktop Optimization Pack             | 2     | windows        |                               |
