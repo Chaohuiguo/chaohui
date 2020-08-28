@@ -366,7 +366,6 @@ Version 2.42 - Removed "Forms Pro"
 - `dynamics-ai-market-insights`
 - `dynamics-ai-customer-service`
 - `dynamics-ai-sales`
-- `windows-server`
 - `windows`
 - `dynamics-operations`: redirected to `dynamics-finance-operations`
 - `azure-sql-data-warehouse`: redirected to `azure-synapse-analytics`
