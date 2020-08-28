@@ -357,7 +357,7 @@ Version 2.42 - Removed "Forms Pro"
 | windows-system-centerpo           | Windows System Center                 | 2     | windows        |                               |
 | windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
 | windows-vir         | Windows Virtual Desktop               | 2     | windows        |                               |
-
+| windows         | Windows Virtual Desktop               | 2     | windows        |                               |
 
 
 
