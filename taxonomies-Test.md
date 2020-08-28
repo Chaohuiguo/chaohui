@@ -356,7 +356,8 @@ Version 2.42 - Removed "Forms Pro"
 | windows-smb-server              | Windows Small Business Server         | 2     | windows        |                               |
 | windows-system-centerpo           | Windows System Center                 | 2     | windows        |                               |
 | windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
-| windows-virtual-desktopwww         | Windows Virtual Desktop               | 2     | windows        |                               |
+| windows-vir         | Windows Virtual Desktop               | 2     | windows        |                               |
+
 
 
 
@@ -364,21 +365,6 @@ Version 2.42 - Removed "Forms Pro"
 ### Recently removed terms
 
 - `dynamics-ai-market-insights`
-- `dynamics-ai-customer-service`
-- `dynamics-ai-sales`
-- `windows`
-- `dynamics-operations`: redirected to `dynamics-finance-operations`
-- `azure-sql-data-warehouse`: redirected to `azure-synapse-analytics`
-- `azure-machine-learning-services`: redirected to `azure-machine-learning`
-- `azure-data-lake-gen1`: redirected to `azure-data-lake-storage`
-- `azure-data-lake-gen2`: redirected to `azure-data-lake-storage`
-- `azure-file-storage`: redirected to `azure-files`
-- `azure-sqldatabase-edge`: redirected to `azure-sql-edge`
-- `forms-pro`: redirected to `customer-voice`
-- `windows-uwp`: redirected to `windows-uwp-b2b`
-- `windows-virtual-desktop`: redirected to `windows-virtual-desktop000`
-- `windows-system-center`: redirected to `windows-system-centerpo`
-- `windows-virtual-desktop000`: redirected to `windows-virtual-desktopwww`
 
 ## Dev lang
 
