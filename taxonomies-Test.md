@@ -357,7 +357,7 @@ Version 2.42 - Removed "Forms Pro"
 | windows-system-centerpo           | Windows System Center                 | 2     | windows        |                               |
 | windows-uwp-b2b                  | Universal Windows Platform (UWP)      | 2     | windows        |                               |
 | windows-virtual-desktopwww         | Windows Virtual Desktop               | 2     | windows        |                               |
-| windows        | Windows Virtual Desktop               | 2     | windows        |                               |
+
 
 
 
@@ -367,6 +367,7 @@ Version 2.42 - Removed "Forms Pro"
 - `dynamics-ai-customer-service`
 - `dynamics-ai-sales`
 - `windows-server`
+- `windows`
 - `dynamics-operations`: redirected to `dynamics-finance-operations`
 - `azure-sql-data-warehouse`: redirected to `azure-synapse-analytics`
 - `azure-machine-learning-services`: redirected to `azure-machine-learning`
