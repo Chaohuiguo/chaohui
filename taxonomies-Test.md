@@ -364,7 +364,7 @@ Version 2.42 - Removed "Forms Pro"
 
 ### Recently removed terms
 
-- `dynamics-ai-market-insights`
+- `windows`
 
 ## Dev lang
 
