@@ -22,6 +22,7 @@ Version 2.42 - Removed "Forms Pro"
 | Slug                            | Preferred Label                       | Level | Broader term   | Change in this version        |
 |---------------------------------|---------------------------------------|-------|----------------|-------------------------------|
 | dotnet                          | .NET                                  | 1     |                |                               |
+| dotnet123                          | .NET                                  | 1     |                |                               |
 | aspnet                          | ASP.NET                               | 2     | dotnet         |                               |
 | aspnet-core                     | ASP.NET Core                          | 2     | dotnet         |                               |
 | ef-core                         | Entity Framework Core                 | 2     | dotnet         |                               |
