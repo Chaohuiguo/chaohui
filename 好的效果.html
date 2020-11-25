@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)https://review.docs.microsoft.com/en-us/learn/certifications/courses/DP-060T00ZH?branch=pr-en-us-1406 -->
+<html class="is-full hasPageActions hasBreadcrumb has-default-focus js-focus-visible theme-light" lang="en-us" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="true" data-target="docs" x-ms-format-detection="none" data-js-focus-visible=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Course DP-060T00ZH--A: Migrate NoSQL workloads to Azure Cosmos DB - Learn">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://docs.microsoft.com/en-us/learn/certifications/courses/dp-060t00zh">
+			<meta property="og:description" content="Course DP-060T00ZH--A: Migrate NoSQL workloads to Azure Cosmos DB">
+		<meta property="og:image" content="https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png">
+		<meta property="og:image:alt" content="Microsoft Logo">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@docsmsft">
+
+
+	<meta name="hoursToComplete" content="24">
+<meta name="uid" content="course.DP-060T00ZH">
+<meta name="author" content="wwlpublish">
+<meta name="breadcrumb_path" content="/breadcrumb/toc.json">
+<meta name="depot_name" content="MSDN.learn-certs-pr">
+<meta name="description" content="Course DP-060T00ZH--A: Migrate NoSQL workloads to Azure Cosmos DB">
+<meta name="document_id" content="88116c1e-8e48-c1b6-5cd3-130d74cd84bc">
+<meta name="document_version_independent_id" content="ba58ea4e-8110-2c6a-173d-997ddca0e1b4">
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/learn-certs-pr/blob/6514d5631cefcb7e1fbfde282729b74e5593649d/learn-certs-pr/courses/DP-060T00ZH.yml">
+<meta name="locale" content="en-us">
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/learn-certs-pr/blob/master/learn-certs-pr/courses/DP-060T00ZH.yml">
+<meta name="search.ms_docsetname" content="learn-certs-pr">
+<meta name="search.ms_product" content="MSDN">
+<meta name="search.ms_sitename" content="Docs">
+<meta name="site_name" content="Docs">
+<meta name="uhfHeaderId" content="MSDocsHeader-Learn">
+<meta name="updated_at" content="2020-11-18 03:13 AM">
+<meta name="page_type" content="learn">
+<meta name="page_kind" content="course">
+
+
+<link href="https://docs.microsoft.com/en-us/learn/certifications/courses/dp-060t00zh" rel="canonical">
+	<title>Course DP-060T00ZH--A: Migrate NoSQL workloads to Azure Cosmos DB - Learn | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="./好的效果_files/53eb8c85.site-ltr.css">
+
+	
+
+
+	<script async="" defer="" crossorigin="anonymous" src="./好的效果_files/lux.js.下载"></script><script>
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'Course',
+			brand: '',
+			context: {
+
+				branches: 'augustpreview,pr-en-us-1374,staging,iltscheduler,pr-en-us-1365,pr-en-us-1418,pr-en-us-1373,pr-en-us-1379,julypreview,pr-en-us-1381,pr-en-us-1417,pr-en-us-1378,pr-en-us-1376,examfaqpreview,pr-en-us-1371,pr-en-us-1367,saldana-patch-1,dev,pr-en-us-1369,pr-en-us-1361,revert-975-master,locdev,wwltest,pr-en-us-1370,psiofferinfo,redirect,pr-en-us-1375,pr-en-us-1372,release11,pr-en-us-1358,junecoursemigration,live,master,pr-en-us-1382,pr-en-us-1406,pr-en-us-1409,pr-en-us-1380,pr-en-us-1377,pr-en-us-1366,templive,main',
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'None',
+			feedbackGitHubRepo: '',
+			feedbackProductUrl: '',
+			contentGitUrl: 'https://github.com/MicrosoftDocs/learn-certs-pr/blob/master/learn-certs-pr/courses/DP-060T00ZH.yml',
+			extendBreadcrumb: true,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasBookmark: true,
+			hasShare: false
+		},
+		functions:{}
+	};
+	</script>
+	<script nomodule="" src="./好的效果_files/bluebird.min.js.下载" integrity="sha384-aD4BDeDGeLXLpPK4yKeqtZQa9dv4a/7mQ+4L5vwshIYH1Mc2BrXvHd32iHzYCQy5" crossorigin="anonymous"></script>
+	<script nomodule="" src="./好的效果_files/fetch.umd.min.js.下载" integrity="sha384-EQIXrC5K2+7X8nGgLkB995I0/6jfAvvyG1ieZ+WYGxgJHFMD/alsG9fSDWvzb5Y1" crossorigin="anonymous"></script>
+	<script nomodule="" src="./好的效果_files/template.min.js.下载" integrity="sha384-1zKzI6ldTVHMU7n0W2HpE/lhHI+UG4D9IIaxbj3kT2UhCWicdTuJkTtnKuu0CQzN" crossorigin="anonymous"></script>
+	<script nomodule="" src="./好的效果_files/url.min.js.下载" integrity="sha384-vn7xBMtpSTfzaTRWxj0kVq0UcsbBrTOgZ/M1ISHqe1V358elYva+lfiEC+T8jLPc" crossorigin="anonymous"></script>
+	<script src="./好的效果_files/298d06f8.index-polyfills.js.下载"></script>
+		<script src="./好的效果_files/2726b394.index-docs.js.下载"></script><style></style><script src="./好的效果_files/jsll-4.js.下载" async="" defer=""></script><script src="./好的效果_files/wcp-consent.js.下载" async="" defer=""></script>
+<script async="" src="./好的效果_files/t.js.下载"></script><style type="text/css"></style><script async="" src="./好的效果_files/t.js(1).下载"></script><script async="" src="./好的效果_files/t.js(2).下载"></script><script async="" src="./好的效果_files/t.js(3).下载"></script><script async="" src="./好的效果_files/t.js(4).下载"></script><script async="" src="./好的效果_files/t.js(5).下载"></script></head>
+
+<body lang="en-us" dir="ltr" data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+<div class="header-holder has-default-focus">
+	<a href="https://review.docs.microsoft.com/en-us/learn/certifications/courses/DP-060T00ZH?branch=pr-en-us-1406#main" class="skip-to-main-link has-outline-color-text visually-hidden-until-focused is-fixed has-inner-focus focus-visible has-top-zero has-left-zero has-right-zero has-padding-medium has-text-centered has-body-background-medium" tabindex="1">Skip to main content</a>
+	<div hidden="" id="cookie-consent-holder"></div>
+	<!-- liquid-tag banners global -->
+	<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization"><!----> <div class="nav-bar"><!---->  <div class="nav-bar-brand">
+		<a class="nav-bar-button cc_pointer" itemprop="url" href="https://www.microsoft.com/" aria-label="Microsoft">
+			<div class="nav-bar-logo" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope">
+				<svg xmlns="http://www.w3.org/2000/svg" width="108" height="23" viewBox="72 72 337 74" preserveAspectRatio="xMidYMin slice">
+					<g data-name="MS-symbol">
+						<clippath id="a">
+							<path transform="matrix(1 0 0 -1 0 216)" d="M0 216h482V0H0z"></path>
+						</clippath>
+						<g clip-path="url(#a)">
+							<path class="has-fill-current-color has-text-subtle" d="M394.942 104.59h-10.858v25.003h-7.38V104.59h-5.182v-5.965h5.182v-4.308c0-3.254 1.06-5.92 3.178-7.998 2.12-2.079 4.835-3.118 8.15-3.118.882 0 1.666.045 2.35.135a9.37 9.37 0 011.806.407v6.296c-.24-.14-.663-.31-1.265-.512-.603-.2-1.296-.3-2.078-.3-1.528 0-2.702.476-3.526 1.43-.824.954-1.235 2.365-1.235 4.232v3.736h10.858v-6.959l7.321-2.229v9.188h7.381v5.965h-7.38v14.49c0 1.91.345 3.254 1.038 4.037.693.783 1.782 1.175 3.27 1.175.42 0 .927-.1 1.52-.3a7.178 7.178 0 001.552-.724v6.025c-.463.261-1.23.502-2.305.723a15.742 15.742 0 01-3.178.331c-3.073 0-5.378-.817-6.914-2.455-1.537-1.637-2.305-4.102-2.305-7.396zm-48.407 9.73c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.45-2.545-6.04-2.545-2.67 0-4.745.888-6.22 2.666-1.477 1.777-2.215 4.313-2.215 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.892-2.993 6.91-4.489 12.05-4.489 4.841 0 8.621 1.441 11.343 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.447 9.018-4.338 11.99-2.892 2.973-6.829 4.458-11.81 4.458-4.8 0-8.61-1.41-11.432-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-16.417-7.802c0 1.045.331 1.863.994 2.456.662.592 2.128 1.34 4.398 2.243 2.912 1.166 4.956 2.476 6.131 3.932 1.175 1.456 1.762 3.22 1.762 5.287 0 2.912-1.12 5.252-3.359 7.02-2.24 1.767-5.267 2.65-9.083 2.65-1.285 0-2.706-.155-4.263-.467-1.556-.31-2.877-.707-3.96-1.19v-7.169a17.945 17.945 0 004.277 2.198c1.526.543 2.911.814 4.157.814 1.647 0 2.862-.23 3.645-.693.784-.46 1.175-1.235 1.175-2.319 0-1.005-.406-1.853-1.22-2.546-.813-.693-2.355-1.492-4.624-2.395-2.69-1.125-4.599-2.39-5.724-3.796-1.125-1.406-1.687-3.193-1.687-5.362 0-2.792 1.11-5.086 3.33-6.884 2.217-1.797 5.095-2.696 8.63-2.696 1.084 0 2.3.12 3.645.361 1.346.242 2.47.553 3.374.934v6.93c-.964-.644-2.089-1.195-3.374-1.658-1.286-.462-2.56-.693-3.826-.693-1.386 0-2.465.271-3.238.813-.774.543-1.16 1.286-1.16 2.23m-35.066 7.562c0 3.233.733 5.703 2.2 7.411 1.465 1.707 3.564 2.56 6.295 2.56 2.652 0 4.67-.853 6.055-2.56 1.386-1.708 2.08-4.238 2.08-7.592 0-3.334-.719-5.849-2.155-7.547-1.436-1.697-3.449-2.545-6.039-2.545-2.672 0-4.745.888-6.222 2.666-1.476 1.777-2.214 4.313-2.214 7.607m-7.592.24c0-5.12 1.446-9.177 4.338-12.17 2.893-2.993 6.91-4.489 12.051-4.489 4.84 0 8.621 1.441 11.342 4.323 2.721 2.883 4.082 6.774 4.082 11.674 0 5.021-1.446 9.018-4.338 11.99-2.892 2.973-6.828 4.458-11.809 4.458-4.8 0-8.61-1.41-11.433-4.232-2.822-2.82-4.233-6.673-4.233-11.554m-3.136-16.448c.582 0 1.105.041 1.567.121.462.08.853.18 1.175.301v7.38c-.382-.28-.939-.546-1.672-.798-.733-.25-1.622-.376-2.666-.376-1.788 0-3.299.753-4.534 2.26-1.235 1.505-1.853 3.825-1.853 6.958v15.635h-7.29V98.624h7.29v4.88h.12c.663-1.687 1.667-3.007 3.013-3.96 1.346-.954 2.962-1.432 4.85-1.432m-27.956 26.18c1.084 0 2.28-.25 3.585-.754a15.06 15.06 0 003.615-1.988v6.778c-1.165.663-2.485 1.165-3.962 1.506-1.475.342-3.098.512-4.865.512-4.559 0-8.265-1.44-11.116-4.323-2.852-2.88-4.278-6.562-4.278-11.04 0-4.98 1.456-9.083 4.37-12.307 2.91-3.224 7.037-4.835 12.38-4.835 1.366 0 2.746.176 4.143.527 1.395.352 2.504.758 3.328 1.22v6.99c-1.125-.824-2.274-1.462-3.45-1.914a9.966 9.966 0 00-3.599-.678c-2.872 0-5.192.934-6.959 2.802-1.768 1.868-2.652 4.388-2.652 7.562 0 3.132.85 5.573 2.546 7.32 1.697 1.748 4.002 2.621 6.914 2.621m-22.112 5.302h-7.29V98.624h7.29zm-8.044-39.916c0-1.205.437-2.214 1.311-3.028.874-.813 1.913-1.22 3.118-1.22 1.285 0 2.35.417 3.193 1.25.844.834 1.266 1.833 1.266 2.998 0 1.185-.432 2.18-1.296 2.982-.864.804-1.918 1.205-3.163 1.205-1.246 0-2.295-.406-3.148-1.219-.854-.815-1.28-1.803-1.28-2.968m-6.274-3.284v43.2h-7.5v-33.86h-.12l-13.408 33.86h-4.97l-13.738-33.86h-.09v33.86h-6.929v-43.2h10.755l12.412 32.024h.18l13.105-32.024z"></path>
+							<path d="M106.214 106.214H71.996V71.996h34.218z" fill="#f25022"></path>
+							<path d="M143.993 106.214h-34.218V71.996h34.218z" fill="#7fba00"></path>
+							<path d="M106.214 143.993H71.996v-34.218h34.218z" fill="#00a4ef"></path>
+							<path d="M143.993 143.993h-34.218v-34.218h34.218z" fill="#ffb900"></path>
+						</g>
+					</g>
+				</svg>
+			</div>
+		</a>
+	</div> 
+			
+		<div class="nav-bar-item is-hidden-tablet">
+			<div class="nav-bar-menu">
+				<button class="nav-bar-button is-title" title="Global navigation" aria-expanded="false">
+					<span class="nav-bar-menu-title"><!---->Learn<!----></span>
+					<div class="nav-bar-burger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span class="nav-bar-burger-label"><!---->Global navigation<!----></span>
+					</div>
+				</button>
+			</div>
+		</div>
+	
+			
+		<nav class="nav-bar-nav" role="navigation" aria-label="Global">
+			<ul class="nav-bar-nav-list">
+				
+		<li class="nav-bar-item is-category">
+			<a class="nav-bar-button is-title has-hover-underline" itemprop="url" href="https://review.docs.microsoft.com/en-us/">
+				<span><!---->Docs<!----></span>
+			</a>
+		</li>
+	
+				<!----> <li class="nav-bar-item">
+				<a class="nav-bar-button has-hover-underline " href="https://docs.microsoft.com/en-us/documentation">
+					<span><!---->Documentation<!----></span>
+				</a>
+		  </li><!----> <li class="nav-bar-item">
+				<a class="nav-bar-button has-hover-underline is-active" href="https://docs.microsoft.com/en-us/learn/">
+					<span><!---->Learn<!----></span>
+				</a>
+		  </li><!----> <li class="nav-bar-item">
+				<a class="nav-bar-button has-hover-underline " href="https://docs.microsoft.com/en-us/answers/products/">
+					<span><!---->Q&amp;A<!----></span>
+				</a>
+		  </li><!----> <li class="nav-bar-item">
+				<a class="nav-bar-button has-hover-underline " href="https://docs.microsoft.com/en-us/samples/browse/">
+					<span><!---->Code Samples<!----></span>
+				</a>
+		  </li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-73">
+			<span><!---->More<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-73" aria-label="More">
+			<!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="nav-bar-button " href="https://docs.microsoft.com/en-us/documentation"><!---->Documentation<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="nav-bar-button " href="https://docs.microsoft.com/en-us/learn/"><!---->Learn<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="nav-bar-button " href="https://docs.microsoft.com/en-us/answers/products/"><!---->Q&amp;A<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="nav-bar-button " href="https://docs.microsoft.com/en-us/samples/browse/"><!---->Code Samples<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+			<span class="nav-bar-spacer"></span>
+			
+		<div class="nav-bar-search " id="ax-74" hidden="">
+			
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form" aria-label="Search" aria-expanded="false" action="https://review.docs.microsoft.com/en-us/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!----> <div class="control ">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="site-search-input" class="autocomplete-input input   is-small" type="search" name="terms" aria-expanded="false" aria-owns="ax-75-listbox" aria-activedescendant="" aria-label="Search" placeholder="Search">
+
+				<span aria-hidden="true" class="icon is-small is-left" hidden="">
+					<span class="has-text-primary docon docon-undefined"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+			</div>
+
+			<ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox" id="ax-75-listbox" aria-label="site-search-input-suggestions" hidden="">
+				
+			</ul><!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="" value="Learn">
+			
+			
+			
+		</form>
+	
+		</div>
+		
+					<div class="nav-bar-search">
+						<!-- hidden when the width drops to tablet -->
+						
+		<form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search" id="nav-bar-search-form-desktop" aria-label="Search" aria-expanded="false" action="https://review.docs.microsoft.com/en-us/search/">
+			<div class="autocomplete" data-bi-name="autocomplete"><!----> <div class="control has-icons-left">
+				<input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" id="ax-76" class="autocomplete-input input control has-icons-left  is-small" type="search" name="terms" aria-expanded="false" aria-owns="ax-77-listbox" aria-activedescendant="" aria-label="Search" placeholder="Search">
+
+				<span aria-hidden="true" class="icon is-small is-left">
+					<span class="has-text-primary docon docon-search"></span>
+				</span>
+
+				<span aria-hidden="true" class="autocomplete-loader loader has-text-primary " hidden=""></span>
+			</div>
+
+			<ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox" id="ax-77-listbox" aria-label="ax-76-suggestions" hidden="">
+				
+			</ul><!----></div>
+			<!-- mobile safari will not dispatch submit event unless there's a submit button that is not display:none -->
+			<button type="submit" class="visually-hidden" tabindex="-1" aria-hidden="true"></button>
+			<input name="category" hidden="" value="Learn">
+			
+			
+			
+		</form>
+	
+					</div>
+			  
+		<div class="nav-bar-search " hidden="">
+			<div class="nav-bar-search-form-expander">
+				<button id="form-expander" class="nav-bar-button has-hover-underline " title="Search" aria-expanded="false" aria-controls="ax-74">
+					
+		<span class="is-visually-hidden-mobile"><!---->Search<!----></span>
+		<span class="icon" aria-hidden="true">
+			<span class="docon docon-search"></span>
+		</span>
+	
+				</button>
+			</div>
+		</div>
+	
+			
+		<div class="nav-bar-profile">
+			
+		<a class="docs-sign-in auth-status-determined not-authenticated" href="https://review.docs.microsoft.com/en-us/learn/certifications/courses/DP-060T00ZH?branch=pr-en-us-1406#"> Sign in </a>
+	 
+		<div class="dropdown has-caret auth-status-determined authenticated">
+			<button class="dropdown-trigger button-reset" aria-controls="user-menu" aria-expanded="false" aria-label="Your Account">
+				<figure class="image is-36x36">
+					<img class="has-body-background-medium is-rounded" alt="" data-profile-property="avatarUrl">
+				</figure>
+			</button>
+			<div class="dropdown-menu box has-flex-justify-content-start has-body-background" id="user-menu" role="menu">
+				<div class="media is-user-dir">
+					<div class="media-left">
+						<figure class="image is-48x48" aria-hidden="true">
+							<img class="has-body-background-medium is-rounded" aria-labelledby="displayName" data-profile-property="avatarUrl">
+						</figure>
+					</div>
+					<div class="media-content">
+						<p class="title is-size-large">
+							<span id="displayName" class="is-inline-truncated has-max-width-200" data-profile-property="displayName"></span>
+						</p>
+						<p class="subtitle is-size-small has-margin-bottom-none">
+							<span class="is-inline-truncated has-max-width-200" data-profile-property="upn"></span>
+						</p>
+					</div>
+				</div>
+				<ul class="has-padding-top-small has-padding-bottom-medium">
+					<li class="has-padding-top-extra-small has-padding-bottom-extra-small">
+						<a href="https://review.docs.microsoft.com/profile" data-profile-property="profileUrl"><!---->Profile<!----></a>
+					</li>
+					<li class="has-padding-top-extra-small has-padding-bottom-extra-small">
+						<a href="https://review.docs.microsoft.com/profile" data-profile-property="bookmarksUrl"><!---->Bookmarks<!----></a>
+					</li>
+					<li class="has-padding-top-extra-small has-padding-bottom-extra-small">
+						<a href="https://review.docs.microsoft.com/profile" data-profile-property="collectionsUrl"><!---->Collections<!----></a>
+					</li>
+					<li class="has-padding-top-extra-small">
+						<a href="https://review.docs.microsoft.com/profile" data-profile-property="challengesUrl"><!---->Challenges<!----></a>
+					</li>
+				</ul>
+				<div class="has-border-top has-padding-top-medium">
+					<a class="docs-sign-out" href="https://review.docs.microsoft.com/en-us/learn/certifications/courses/DP-060T00ZH?branch=pr-en-us-1406#"><!---->Sign out<!----></a>
+				</div>
+			</div>
+		</div>
+	
+		</div>
+	
+		 <!----></div> <div class="nav-bar has-border-top is-hidden-mobile"><!----> 
+		<a class="nav-bar-button is-title has-hover-underline" itemprop="url" href="https://review.docs.microsoft.com/learn/">
+			<span>
+				Learn
+				
+			</span>
+		</a>
+	 
+		
+		<nav class="nav-bar-nav" role="navigation" aria-label="Site">
+			<ul class="nav-bar-nav-list">
+				
+				<!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button has-hover-underline cc_pointer" aria-controls="ax-78">
+			<span><!---->Products<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-78" aria-label="Products">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/azure/"><!---->Azure<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/dynamics365/"><!---->Dynamics 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/m365/"><!---->Microsoft 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/dotnet/"><!---->.NET<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/powerplatform/"><!---->Power Platform<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/teams/"><!---->Teams<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/browse/"><!---->Browse all paths<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-79">
+			<span><!---->Roles<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-79" aria-label="Roles">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/administrator"><!---->Administrator<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/ai-engineer"><!---->AI Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/app-maker"><!---->App Maker<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/business-user"><!---->Business User<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/data-analyst"><!---->Data Analyst<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/data-engineer"><!---->Data Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/data-scientist"><!---->Data Scientist<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/developer"><!---->Developer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/devops-engineer"><!---->DevOps Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/functional-consultant"><!---->Functional Consultant<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/security-engineer"><!---->Security Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/solutions-architect"><!---->Solutions Architect<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/student"><!---->Student<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="nav-bar-item">
+				<a class="nav-bar-button has-hover-underline " href="https://review.docs.microsoft.com/en-us/learn/tv/">
+					<span><!---->Learn TV<!----></span>
+				</a>
+		  </li><!----> <li class="dropdown nav-bar-item">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button is-active has-hover-underline" aria-controls="ax-80">
+			<span><!---->Certifications<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-80" aria-label="Certifications">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/certifications/"><!---->Overview<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/certifications/browse/"><!---->Browse Certifications<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/certifications/courses/browse/"><!---->Browse Courses<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="nav-bar-item">
+				<a class="nav-bar-button has-hover-underline " href="https://review.docs.microsoft.com/en-us/learn/support/">
+					<span><!---->FAQ &amp; Help<!----></span>
+				</a>
+		  </li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline" aria-controls="ax-81">
+			<span><!---->More<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-down-light expanded-indicator"></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-81" aria-label="More">
+			<!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-82">
+			<span><!---->Products<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-82" aria-label="Products">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/azure/"><!---->Azure<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/dynamics365/"><!---->Dynamics 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/m365/"><!---->Microsoft 365<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/dotnet/"><!---->.NET<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/powerplatform/"><!---->Power Platform<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/teams/"><!---->Teams<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/browse/"><!---->Browse all paths<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button  " aria-controls="ax-83">
+			<span><!---->Roles<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-83" aria-label="Roles">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/administrator"><!---->Administrator<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/ai-engineer"><!---->AI Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/app-maker"><!---->App Maker<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/business-user"><!---->Business User<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/data-analyst"><!---->Data Analyst<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/data-engineer"><!---->Data Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/data-scientist"><!---->Data Scientist<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/developer"><!---->Developer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/devops-engineer"><!---->DevOps Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/functional-consultant"><!---->Functional Consultant<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/security-engineer"><!---->Security Engineer<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/solutions-architect"><!---->Solutions Architect<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/roles/student"><!---->Student<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/tv/"><!---->Learn TV<!----></a>
+				</li>
+		  <!----> <li class="dropdown nav-bar-item" hidden="">
+		<button aria-expanded="false" class="dropdown-trigger nav-bar-button is-active " aria-controls="ax-84">
+			<span><!---->Certifications<!----></span>
+			<span class="nav-bar-button-chevron" aria-hidden="true">
+				<span class="docon docon-chevron-right-light "></span>
+			</span>
+		</button>
+		<ul class="dropdown-menu" id="ax-84" aria-label="Certifications">
+			<!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/certifications/"><!---->Overview<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/certifications/browse/"><!---->Browse Certifications<!----></a>
+				</li>
+		  <!---->
+				<li class="nav-bar-item">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/certifications/courses/browse/"><!---->Browse Courses<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+				<li class="nav-bar-item" hidden="">
+					<a class="nav-bar-button " href="https://review.docs.microsoft.com/en-us/learn/support/"><!---->FAQ &amp; Help<!----></a>
+				</li>
+		  <!---->
+		</ul>
+	</li><!---->
+			</ul>
+		</nav>
+	
+		<span class="nav-bar-spacer"></span>
+		 
+		<li id="level-status-container" class="is-flex has-flex-align-items-center is-hidden is-hidden-touch">
+			<div id="level-status" class="is-relative level has-margin-left-extra-small has-margin-right-extra-small">
+	<a href="https://review.docs.microsoft.com/en-us/learn/certifications/courses/DP-060T00ZH?branch=pr-en-us-1406#" class="is-absolute-fills has-z-index-one" aria-label="Profile"></a>
+	<span id="level-status-text" class="is-size-extra-small has-text-wrap is-inline-truncated is-uppercase has-text-weight-semibold"></span>
+	<span id="level-status-progress-container" class="hexagonal-progress">
+		<progress id="level-status-progress" class="progress is-hidden-mobile is-inline-block is-relative is-success" value="1" max="100">1%</progress>
+		<span class="hexagonal-progress-marker"></span>
+	</span>
+	<span id="level-status-points" class="is-size-extra-small has-text-wrap is-inline-truncated is-uppercase">
+	</span>
+</div>
+		</li>
+	
+	 <!----></div> <!----></header>	</div>
+
+				<div class="content-header uhf-container has-padding has-default-focus has-border-bottom-none" data-bi-name="content-header">
+				<nav class="has-padding-none has-padding-left-medium-tablet has-padding-right-medium-tablet has-padding-left-none-uhf-tablet has-padding-left-none-uhf-tablet has-padding-none-desktop has-flex-grow" data-bi-name="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Breadcrumb">
+					<ul id="page-breadcrumbs" class="breadcrumbs"><!----><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://review.docs.microsoft.com/en-us/"><span itemprop="name"><!---->Docs<!----></span></a>
+				<meta itemprop="position" content="1">
+			</li><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://review.docs.microsoft.com/en-us/learn/"><span itemprop="name"><!---->Learn<!----></span></a>
+				<meta itemprop="position" content="2">
+			</li><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://review.docs.microsoft.com/en-us/learn/certifications/browse/"><span itemprop="name"><!---->Browse Certifications<!----></span></a>
+				<meta itemprop="position" content="3">
+			</li><!----> <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<span itemprop="name"><!---->Course DP-060T00ZH--A: Migrate NoSQL workloads to Azure Cosmos DB - Learn<!----></span>
+				<meta itemprop="position" content="4">
+			</li><!----><!----></ul>
+				</nav>
+			<div class="content-header-controls">
+				<button type="button" class="contents-button button" data-bi-name="contents-expand" aria-haspopup="true">
+					<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+					<span class="contents-expand-title">Contents</span>
+				</button>
+				<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse" aria-controls="action-panel">
+					<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+					<span>Exit focus mode</span>
+				</button>
+			</div>
+			<div class="has-padding-none-tablet has-padding-medium is-size-small is-flex-touch has-flex-justify-content-space-between-touch has-flex-grow">
+				<ul class="is-hidden-mobile action-list has-flex-justify-content-start has-flex-justify-content-end-tablet is-flex is-flex-row has-flex-wrap has-flex-grow is-unstyled"><li><div class="control">
+		<div class="select is-small is-rounded">
+			<select id="branch-selector" class="has-width-150">
+				<option value="">Select Branch</option>
+				<option value="augustpreview">augustpreview</option><option value="dev">dev</option><option value="examfaqpreview">examfaqpreview</option><option value="iltscheduler">iltscheduler</option><option value="julypreview">julypreview</option><option value="junecoursemigration">junecoursemigration</option><option value="live">live</option><option value="locdev">locdev</option><option value="main">main</option><option value="master">master</option><option value="pr-en-us-1358">pr-en-us-1358</option><option value="pr-en-us-1361">pr-en-us-1361</option><option value="pr-en-us-1365">pr-en-us-1365</option><option value="pr-en-us-1366">pr-en-us-1366</option><option value="pr-en-us-1367">pr-en-us-1367</option><option value="pr-en-us-1369">pr-en-us-1369</option><option value="pr-en-us-1370">pr-en-us-1370</option><option value="pr-en-us-1371">pr-en-us-1371</option><option value="pr-en-us-1372">pr-en-us-1372</option><option value="pr-en-us-1373">pr-en-us-1373</option><option value="pr-en-us-1374">pr-en-us-1374</option><option value="pr-en-us-1375">pr-en-us-1375</option><option value="pr-en-us-1376">pr-en-us-1376</option><option value="pr-en-us-1377">pr-en-us-1377</option><option value="pr-en-us-1378">pr-en-us-1378</option><option value="pr-en-us-1379">pr-en-us-1379</option><option value="pr-en-us-1380">pr-en-us-1380</option><option value="pr-en-us-1381">pr-en-us-1381</option><option value="pr-en-us-1382">pr-en-us-1382</option><option value="pr-en-us-1406" selected="">pr-en-us-1406</option><option value="pr-en-us-1409">pr-en-us-1409</option><option value="pr-en-us-1417">pr-en-us-1417</option><option value="pr-en-us-1418">pr-en-us-1418</option><option value="psiofferinfo">psiofferinfo</option><option value="redirect">redirect</option><option value="release11">release11</option><option value="revert-975-master">revert-975-master</option><option value="saldana-patch-1">saldana-patch-1</option><option value="staging">staging</option><option value="templive">templive</option><option value="wwltest">wwltest</option>
+			</select>
+		</div></div></li>
+					<li>
+						<button type="button" class="bookmark button is-text has-inner-focus is-small is-icon-only-touch" data-list-type="bookmarks" data-bi-name="bookmark" title="Add bookmark for Course DP-060T00ZH--A: Migrate NoSQL workloads to Azure Cosmos DB - Learn | Microsoft Docs" aria-pressed="false">
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-single-bookmark"></span>
+							</span>
+							<span class="bookmark-status is-visually-hidden-touch is-hidden-portrait">Bookmark</span>
+						</button>
+					</li>
+				</ul>
+				<button type="button" class="has-border contents-button button is-small is-text is-hidden-tablet has-inner-focus" aria-label="Contents" data-bi-name="contents-expand">
+					<span class="icon">
+						<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+					</span>
+					<span class="contents-expand-title">Table of contents</span>
+				</button>
+				<div class="is-invisible"></div>
+				<div class="is-hidden-tablet level-item is-flexible level-right">
+					<button type="button" class="page-actions-button button is-small is-text is-hidden-tablet has-inner-focus has-border is-full-height  has-margin-left-small" aria-label="Page Actions" data-bi-name="pageactions">
+						<span class="icon">
+							<span class="docon docon-more-vertical" aria-hidden="true"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+
+	<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus">
+		<!-- liquid-tag banners sectional -->
+	</div>
+	</div>
+
+	<div class="mainContainer  uhf-container is-full  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile  is-gapless">
+
+
+			<section class="primary-holder column ">
+				<div class="columns is-gapless-mobile has-large-gaps  is-gapless">
+
+
+				<div id="main-column" class="column ">
+
+					<main id="main" role="main" class="" data-bi-name="content" lang="en-us" dir="ltr">
+
+
+
+						
+
+
+						<!-- <content> -->
+							<div class="modular-content-container">
+	<div class="section is-small is-uniform has-padding-top-none is-relative-mobile has-padding-bottom-medium">
+		<div class="columns has-large-gaps has-margin-top-medium">
+				<div class="column is-2 has-padding-medium has-padding-bottom-none has-padding-top-none has-padding-bottom-medium-tablet has-padding-top-medium-tablet">
+					<figure class="image is-128x128-desktop is-112x112-tablet is-96x96 has-margin-none">
+						<img class="has-padding-left-none has-margin-left-none" role="presentation" src="./好的效果_files/course.svg" alt="" data-linktype="absolute-path">
+					</figure>
+				</div>
+
+			<div class="column is-relative-tablet has-padding-top-none has-padding-top-large-tablet">
+				<div class="columns is-mobile is-gapless has-margin-bottom-none">
+					<div class="column is-auto heading-container">
+						<h1 class="has-line-height-reset title is-1">
+							Course DP-060T00ZH: Migrate NoSQL workloads to Azure Cosmos DB
+						</h1>
+						<ul class="metadata page-metadata">
+							<li>1 Day</li>
+							<li>Instructor-led training</li>
+							<li>Intermediate</li>
+							<li>Chinese (Simplified)</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="has-margin-top-medium summary is-size-body content"><h4 id="audienceprofile-本课程的主要受众是计划将-mongodb-和-cassandra-工作负荷迁移到使用-cosmos-db-的-azure-的数据库开发者">AudienceProfile $本课程的主要受众是计划将 MongoDB 和 Cassandra 工作负荷迁移到使用 Cosmos DB 的 Azure 的数据库开发者。</h4>
+</div>
+				<div class="has-line-height-reset course-information has-margin-top-medium">
+					<div>
+						<p class="is-size-small"><strong>Job role:</strong>
+								<span>App Maker</span>
+						</p>
+					</div>
+
+					<div class="related-exams">
+						<p class="is-size-small">
+							<strong>Features:</strong>
+							<span>none</span>
+						</p>
+					</div>
+
+					<div id="findALearningPartnerContainer" class="has-margin-top-medium">
+						<a href="https://www.microsoft.com/learning/partners.aspx" class="button is-primary" data-linktype="external">
+							<span>Find a learning partner</span>
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-chevron-right-light"></span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="browseAllSessionsContainer" class="has-background-alternating-grey" hidden="">
+	<div class="modular-content-container">
+		<div class="section is-small is-uniform">
+			<h2 class="has-margin-bottom-extra-small">
+				Browse All Sessions
+			</h2>
+			<div id="browseAllSessionsContent" class="content">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div id="skillsGainedContainer" class="modular-content-container">
+		<div class="section is-small is-uniform has-padding-top-medium has-body-background-mobile">
+			<h3 class="title is-5">
+				Skills gained
+			</h3>
+			<div class="content has-line-height-reset">
+				<ul id="skills-gained">
+						<li class=" is-size-small">
+							将 MongoDB 工作负荷迁移到 Cosmos DB
+						</li>
+						<li class=" is-size-small">
+							将 Cassandra 工作负荷迁移到 Cosmos DB
+						</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="has-background-alternating-grey">
+		<div class="modular-content-container">
+			<div class="section is-small is-uniform">
+				<h2 class="title is-3 has-margin-top-large">
+					Prerequisites
+				</h2>
+				<div class="content">
+					<p>除了</p>
+<ul>
+<li>构建和配置不受 Cosmos DB API影响的可缩放 NoSQL应用程序所需的分区、复制和资源治理基础概念。</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="has-background-alternating-grey">
+		<div class="modular-content-container">
+			<div class="section is-small is-uniform">
+				<h2 class="title is-2 has-margin-top-large">
+					Course outline
+				</h2>
+				<div class="content">
+					<h3 id="module-1-使用-cosmos-db-生成全球分布式应用程序">Module 1: 使用 Cosmos DB 生成全球分布式应用程序</h3>
+<p>本模块说明 Cosmos DB 的优势和体系结构。</p>
+<h4 id="lessons">Lessons</h4>
+<ul>
+<li><p>Cosmos DB 概述</p>
+</li>
+<li><p>Cosmos DB API</p>
+</li>
+<li><p>预配吞吐量</p>
+</li>
+<li><p>分区/分片最佳做法</p>
+</li>
+</ul>
+<p>完成本模块后，学生将能够描述：</p>
+<ul>
+<li><p>Cosmos DB 概述</p>
+</li>
+<li><p>Cosmos DB API</p>
+</li>
+<li><p>预配吞吐量</p>
+</li>
+<li><p>分区/分片最佳做法</p>
+</li>
+</ul>
+<h3 id="module-2-将-mongodb-工作负荷迁移到-cosmos-db">Module 2: 将 MongoDB 工作负荷迁移到 Cosmos DB</h3>
+<p>将 MongoDB 工作负荷迁移到 Cosmos DB</p>
+<h4 id="lessons-1">Lessons</h4>
+<ul>
+<li><p>了解迁移的益处</p>
+</li>
+<li><p>迁移规划</p>
+</li>
+<li><p>数据迁移</p>
+</li>
+<li><p>应用程序迁移</p>
+</li>
+<li><p>迁移后注意事项</p>
+</li>
+</ul>
+<p>Lab 1: 将 MongoDB 工作负荷迁移到 Cosmos DB</p>
+<p>1: 创建迁移项目</p>
+<p>1: 定义源和目标</p>
+<p>1: 执行迁移</p>
+<p>1: 验证迁移</p>
+<p>完成本模块后，学生将能够：</p>
+<ul>
+<li><p>了解迁移的益处</p>
+</li>
+<li><p>Perform 迁移规划</p>
+</li>
+<li><p>Perform 数据迁移</p>
+</li>
+<li><p>Perform 应用程序迁移</p>
+</li>
+<li><p>Undertake 迁移后注意事项</p>
+</li>
+</ul>
+<h3 id="module-3-将-cassandra-工作负荷迁移到-cosmos-db">Module 3: 将 Cassandra 工作负荷迁移到 Cosmos DB</h3>
+<p>本模块说明将 Cassandra 工作负荷迁移到 Cosmos DB 的好处和过程。</p>
+<h4 id="lessons-2">Lessons</h4>
+<ul>
+<li><p>了解迁移的益处</p>
+</li>
+<li><p>迁移规划</p>
+</li>
+<li><p>数据迁移</p>
+</li>
+<li><p>应用程序迁移</p>
+</li>
+<li><p>迁移后注意事项</p>
+</li>
+</ul>
+<p>Lab 1: 将 Cassandra 工作负荷迁移到 Cosmos DB</p>
+<p>1: 导出架构</p>
+<p>1: 使用 CQLSH COPY 迁移数据</p>
+<p>1: 使用 Spark 迁移数据</p>
+<p>1: 验证迁移</p>
+<p>完成本模块后，学生将能够：</p>
+<ul>
+<li><p>了解迁移的益处</p>
+</li>
+<li><p>Perform 迁移规划</p>
+</li>
+<li><p>Perform 数据迁移</p>
+</li>
+<li><p>Perform 应用程序迁移</p>
+</li>
+<li><p>Undertake 迁移后注意事项</p>
+</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="hero is-tertiary">
+	<div class="hero-body">
+		<div class="buttons is-centered">
+			<a href="https://review.docs.microsoft.com/en-us/learn/certifications/courses/browse/" class="button is-transparent is-large" data-linktype="absolute-path">
+				<span>See all instructor-led courses</span>
+				<span class="icon" aria-hidden="true">
+					<span class="docon docon-navigate-external"></span>
+				</span>
+			</a>
+		</div>
+	</div>
+</div>
+						<!-- </content> -->
+
+						</main>
+
+						<!-- page rating section -->
+						<!-- end page rating section -->
+
+
+						<!-- feedback section -->
+
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+						<div class="footerContainer is-visible-interactive has-default-focus  has-border-top has-margin-none">
+
+
+
+	<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <div class="is-flex is-full-height has-padding-right-extra-large-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link has-flex-shrink-none" href="https://review.docs.microsoft.com/en-us/locale?target=https://review.docs.microsoft.com/en-us/learn/certifications/courses/DP-060T00ZH?branch=pr-en-us-1406" data-bi-name="select-locale"><span class="icon docon docon-world is-size-large has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text">English (United States)</span></a>
+		<div class="has-margin-left-medium has-margin-right-medium has-flex-shrink-none">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button is-transparent is-small is-icon-only-touch has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu-interactive" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu-interactive" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light has-margin-right-small">
+						<span class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Light					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>		</div>
+	</div>
+    <ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden=""></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/teamblog" data-bi-name="bloglink">Blog</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+				<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+			<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>© Microsoft 2020</li>
+    </ul>
+</footer>
+						</div>
+					</div>
+
+
+					<!--end of div.columns -->
+				</div>
+
+			<!--end of .primary-holder -->
+			</section>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="footerContainer has-default-focus is-hidden-interactive  has-border-top has-margin-none">
+
+
+
+	<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <div class="is-flex is-full-height has-padding-right-extra-large-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link has-flex-shrink-none" href="https://review.docs.microsoft.com/en-us/locale?target=https://review.docs.microsoft.com/en-us/learn/certifications/courses/DP-060T00ZH?branch=pr-en-us-1406" data-bi-name="select-locale"><span class="icon docon docon-world is-size-large has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text">English (United States)</span></a>
+		<div class="has-margin-left-medium has-margin-right-medium has-flex-shrink-none">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button is-transparent is-small is-icon-only-touch has-inner-focus theme-dropdown-trigger" aria-controls="theme-menu" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start is-selected" data-theme-to="light" aria-pressed="true">
+					<span class="theme-light has-margin-right-small">
+						<span class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Light					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="dark" aria-pressed="false">
+					<span class="theme-dark has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start" data-theme-to="high-contrast" aria-pressed="false">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background" aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background"></rect>
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary"></rect>
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary"></rect>
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary"></rect>
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary"></rect>
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary"></rect>
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary"></rect>
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>		</div>
+	</div>
+    <ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden=""></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/teamblog" data-bi-name="bloglink">Blog</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+				<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+			<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>© Microsoft 2020</li>
+    </ul>
+</footer>
+	</div>
+
+	<div id="action-panel" role="region" aria-label="Action Panel" class="action-panel has-default-focus" tabindex="-1"></div>
+	<span id="adobe-target-experiment-container" hidden=""></span>
+
+
+</body></html>
