@@ -61,7 +61,7 @@ For more details, see the full taxonomy [Detail View](https://taxonomyservice.az
 			<td>Application Insights</td>
 		</tr>
 		<tr>
-			<td>azure-app-service</td>
+			<td>azure-chaohui-service</td>
 			<td>App Service</td>
 		</tr>
 		<tr>
