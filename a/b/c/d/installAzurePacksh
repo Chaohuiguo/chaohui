@@ -1,0 +1,78 @@
+#!/bin/bas
+echo "Start AzSecPack installation"
+TENANT="DataPlatform-AUS"
+ROLE="ESCluster"
+if [ -z "$TENANT" ] || [ -z "$ROLE" ]
+then
+        echo "You must set tenant and role in the scripts before running"
+        exit 1
+else
+        echo "parameters validated"
+fi
+ROLE_INSTANCE=$(hostname)
+GCS_ENVIRONMENT=DiagnosticsPROD
+GCS_ACCOUNT=IPSecMonitoring
+GCS_REGION=CentralUS
+GCS_CERT_CERTFILE=\/etc\/mdsd.d\/gcscert.pem
+GCS_CERT_KEYFILE=\/etc\/mdsd.d\/gcskey.pem
+GCS_NAMESPACE=LinuxCommon
+USE_GENEVA_CONFIG_SERVICE=true
+MDSD_CONFIG_FILE=/etc/default/mdsd
+CLAMAV_CONFIG_FILE=/etc/azsec/scans.d/clamavscan.xml
+echo "installing mdsd and AzSecPack"
+echo 'deb [arch=amd64] http://packages.microsoft.com/repos/azurecore/ xenial main' | sudo tee -a /etc/apt/sources.list.d/azure.list
+rm microsoft.*
+rm msopentech.*
+wget https://packages.microsoft.com/keys/microsoft.asc
+wget https://packages.microsoft.com/keys/msopentech.asc
+sudo apt-key add microsoft.asc
+sudo apt-key add msopentech.asc
+sudo apt-get update
+sudo apt-get install -y azure-mdsd
+sudo apt-get install -y azure-security azsec-monitor azsec-clamav
+sudo /usr/local/bin/azsecd config -s clamav -d P1D
+echo "mdsd and AzSecPack were installed"
+sleep 5
+echo "copy certs and set permissions"
+sudo cp ~/gcs* /etc/mdsd.d/
+sudo chown syslog.syslog /etc/mdsd.d/gcskey.pem
+sudo chmod 400 /etc/mdsd.d/gcskey.pem
+echo "done copy certs and set permissions"
+echo "start replacing mdsd and clamav configuration"
+sudo sed -i "s/#export MONITORING_TENANT=.*/export MONITORING_TENANT=$TENANT/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_ROLE=.*/export MONITORING_ROLE=$ROLE/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_ROLE_INSTANCE=.*/export MONITORING_ROLE_INSTANCE=$ROLE_INSTANCE/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_CONFIG_VERSION=.*/export MONITORING_CONFIG_VERSION=$CONFIG_VERSION/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_GCS_ENVIRONMENT=.*/export MONITORING_GCS_ENVIRONMENT=$GCS_ENVIRONMENT/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_GCS_ACCOUNT=.*/export MONITORING_GCS_ACCOUNT=$GCS_ACCOUNT/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_GCS_REGION=.*/export MONITORING_GCS_REGION=$GCS_REGION/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_GCS_CERT_CERTFILE=.*/export MONITORING_GCS_CERT_CERTFILE=${GCS_CERT_CERTFILE//\//\\/}/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_GCS_CERT_KEYFILE=.*/export MONITORING_GCS_CERT_KEYFILE=${GCS_CERT_KEYFILE//\//\\/}/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_GCS_NAMESPACE=.*/export MONITORING_GCS_NAMESPACE=$GCS_NAMESPACE/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/#export MONITORING_USE_GENEVA_CONFIG_SERVICE=.*/export MONITORING_USE_GENEVA_CONFIG_SERVICE=$USE_GENEVA_CONFIG_SERVICE/g" $MDSD_CONFIG_FILE
+sudo sed -i "s/false/true/g" $CLAMAV_CONFIG_FILE
+echo "finished update mdsd and clamav configuration"
+echo "restart the mdsd(sleep 30s to wait for the mdsd is up)"
+sudo systemctl restart mdsd
+sleep 30
+MDSD_STATUS=$(systemctl is-active mdsd)
+if [ $MDSD_STATUS == "active" ]
+then
+        echo "done restart mdsd"
+else
+        echo "mdsd can't be started."
+        exit 1
+fi
+echo "checking azSecPack status"
+AZSECD_STATUS=$(sudo /usr/local/bin/azsecd status | grep -i ERROR)
+
+if [ -z $AZSECD_STATUS ]
+then
+        echo "azSecPack is up without ERROR"
+else
+        echo $AZSECD_STATUS
+        echo "there is an error in azSecPack, please check"
+        exit 1
+fi
+echo "AzSecPack installation done"
+echo "AzSecPack  done"
